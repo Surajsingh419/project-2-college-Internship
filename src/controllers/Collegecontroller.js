@@ -18,7 +18,7 @@ const registercollege = async function (req, res) {
         const requestBody = req.body;
         console.log(requestBody)
         if (!isValidRequestBody(requestBody)) {
-            res.status(400).send({ status: false, message: 'Invalid request parameters. Please provide college details' })
+            res.status(400).send({ status: false, message: 'Invalid request parameters. Please provide url details' })
             return
         }
         // EXTRACT PARAMS
